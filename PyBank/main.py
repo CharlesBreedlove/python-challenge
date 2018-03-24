@@ -15,8 +15,8 @@ Greatest_decrease = 0
 Decrease_Month = ""
 
 i=0
-
-filepath = os.path.join("raw_data", "budget_data_1.csv")
+file_name = input("Enter Filename> ")
+filepath = os.path.join("raw_data", file_name)
 
 with open(filepath) as csvfile:
 	reader = csv.DictReader(csvfile)

@@ -9,7 +9,8 @@ Candidate_list = []
 Winner = ""
 Winner_votes = 0
 
-filepath = os.path.join("raw_data", "election_data_2.csv")
+file_name = input("Enter Filename> ")
+filepath = os.path.join("raw_data", file_name)
 
 with open(filepath) as csvfile:
 	reader = csv.DictReader(csvfile)
